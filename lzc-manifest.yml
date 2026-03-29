@@ -1,6 +1,6 @@
 lzc-sdk-version: '0.1'
 name: OpenCLI MCP
-package: cloud.lazycat.app.opencli_mcp
+package: cloud.lazycat.app.openclimcp
 version: 1.0.0
 description: opencli daemon + MCP SSE server. Exposes 60+ website CLI tools to Claude Code.
 
@@ -8,7 +8,7 @@ application:
   subdomain: opencli
   background_task: true
   routes:
-    - /=http://opencli.cloud.lazycat.app.opencli_mcp.lzcapp:3000
+    - /=http://opencli.cloud.lazycat.app.openclimcp.lzcapp:3000
   # Expose port 19825 for Chrome extension (via SSH tunnel from PC)
   # No ingress needed — SSH -L 19825:localhost:19825 handles it
 services:
