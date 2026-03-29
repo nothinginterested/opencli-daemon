@@ -1,0 +1,5 @@
+.git
+*.lpk
+dist/
+node_modules/
+gen-icon.sh
